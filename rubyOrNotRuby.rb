@@ -11,6 +11,6 @@ when "French", "french"
 when "Spanish", "spanish"
     puts "Hola"
     exit
-else "English"
+else
     puts "Hello"
 end
