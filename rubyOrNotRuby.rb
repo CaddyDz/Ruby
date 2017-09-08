@@ -1,5 +1,5 @@
-groceries = ["bananas", "sweet potatoes", "pasta", "tomatoes"]
-
-(0..5).each do |i|
-    puts "# #{i}"
+def add_nums(num_1, num_2)
+    return num_1.to_i + num_2.to_i
 end
+
+puts add_nums(3, 4)
