@@ -1,3 +1,5 @@
-puts 1.class
-puts 1.234.class
-puts "A String".class
+A_CONSTANT = 31.4
+
+A_CONSTANT = 1.6
+
+puts A_CONSTANT
