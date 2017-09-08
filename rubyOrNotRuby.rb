@@ -1,16 +1,5 @@
-print "Enter a value: "
+num_one = 1.000
 
-first_num = gets.to_i
+num99 = 0.999
 
-print "Enter another value: "
-
-second_num = gets.to_i
-
-puts first_num.to_s + " + " + second_num.to_s + " = " + (first_num + second_num).to_s
-
-# Arithmetic Operators
-puts "6 + 4 = " + (6+4).to_s
-puts "6 - 4 = " + (6-4).to_s
-puts "6 * 4 = " + (6*4).to_s
-puts "6 / 4 = " + (6/4).to_s
-puts "6 % 4 = " + (6%4).to_s
+puts num_one.to_s + " - " + num99.to_s + " = " + (num_one - num99).to_s
