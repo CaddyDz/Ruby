@@ -47,3 +47,14 @@ rover = Dog.new
 rover.name = "Rover"
 
 puts rover.name
+
+class GermanShepard < Dog
+    def bark
+        return "Loud Bark"
+    end
+end
+
+max = GermanShepard.new
+max.name = "Max"
+
+printf "%s goes %s \n", max.name, max.bark()
