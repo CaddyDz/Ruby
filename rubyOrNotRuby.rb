@@ -1,5 +1,5 @@
 groceries = ["bananas", "sweet potatoes", "pasta", "tomatoes"]
 
-groceries.each do |food|
-    puts "Get some #{food}"
+(0..5).each do |i|
+    puts "# #{i}"
 end
