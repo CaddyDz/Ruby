@@ -1,1 +1,3 @@
-load "rubyOrNotRuby2.rb"
+=begin
+    Multi line comment
+end
