@@ -10,3 +10,7 @@ full_name = "{first_name} #{middle_name} #{last_name}"
 puts full_name.include?("Justin")
 
 puts full_name.size
+
+puts "Vowels : " + full_name.count("aeiou").to_s
+
+puts "Consonants : " + full_name.count("^aeiou").to_s
