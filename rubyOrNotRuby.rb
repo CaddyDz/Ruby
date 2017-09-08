@@ -7,4 +7,4 @@ middle_name = "Justin"
 
 full_name = "{first_name} #{middle_name} #{last_name}"
 
-puts "a == a " + ("a" == "a").to_s
+puts "\"a\".equal?(\"a\") : " + ("a".equal?"a").to_s
