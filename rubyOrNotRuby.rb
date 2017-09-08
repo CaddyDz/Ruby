@@ -1,3 +1,16 @@
 age = 12
 
-puts "You're Young" if age < 30
+print "Enter Greeting : "
+
+greeting = gets.chomp
+
+case greeting
+when "French", "french"
+    puts "Bonjour"
+    exit
+when "Spanish", "spanish"
+    puts "Hola"
+    exit
+else "English"
+    puts "Hello"
+end
