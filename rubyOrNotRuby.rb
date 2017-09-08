@@ -1,16 +1,13 @@
-def add_nums(num_1, num_2)
-    return num_1.to_i + num_2.to_i
+print "Enter a Number : "
+first_num = gets.to_i
+print "Enter Another : "
+second_num = gets.to_i
+
+begin
+    answer = first_num / second_num
+rescue
+    puts "You can't divide by zero"
+    exit
 end
 
-puts add_nums(3, 4)
-
-
-x = 1
-
-def change_x(x)
-    x = 4
-end
-
-change_x(x)
-
-puts "x = #{x}"
+puts "#{first_num} / #{second_num} = #{answer}"
