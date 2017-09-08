@@ -22,3 +22,6 @@ full_name = full_name.strip
 puts full_name.rjust(20, '.')
 puts full_name.ljust(20, '.')
 puts full_name.center(20, '.')
+
+puts full_name.chop
+puts full_name.chomp('as')
