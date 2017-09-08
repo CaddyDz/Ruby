@@ -1,7 +1,3 @@
 age = 12
 
-unless age > 4
-    puts "No School"
-else
-    puts "Go to School"
-end
+puts "You're Young" if age < 30
