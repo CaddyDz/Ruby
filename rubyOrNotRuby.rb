@@ -9,4 +9,6 @@ full_name = "{first_name} #{middle_name} #{last_name}"
 
 puts "\"a\".equal?(\"a\") : " + ("a".equal?"a").to_s
 
-puts first_name.equal?first_name
+puts full_name.upcase
+puts full_name.downcase
+puts full_name.swapcase
