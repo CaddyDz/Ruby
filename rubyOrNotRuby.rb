@@ -1,35 +1,10 @@
-class Menu
-    include Enumerable
+file = File.new("authors.out", "w")
 
-    def each
-        yield "pizza"
-        yield "spaghetti"
-        yield "salad"
-        yield "water"
-        yield "bread"
-    end
-end
+file.puts "William Shakespeare"
+file.puts "Agatha Christie"
+file.puts "Barbara Cartland"
 
-menu_options = Menu.new
+file.close
 
-menu_options.each do |item|
-    puts "would you like : #{item}"
-end
+puts File.read("authors.out")
 
-p menu_options.find{|item| item = "pizza"}
-
-p menu_options.select {|item| item.size <= 5}
-
-p menu_options.first
-
-p menu_options.take(2)
-
-p menu_options.drop(2)
-
-p menu_options.min
-
-p menu_options.max
-
-p menu_options.sort
-
-menu_options.reverse_each {|item| puts item}
