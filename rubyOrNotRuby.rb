@@ -22,3 +22,7 @@ puts "Has Key Lisa Morel : " + superHeroes.has_key?("Lisa Morel").to_s
 puts "Has Value Batman : " + superHeroes.has_value?("Batman").to_s
 puts "Is Hash Empty : " + superHeroes.empty?.to_s
 puts "Size of Hash : " + superHeroes.size.to_s
+
+superHeroes.delete("Barry Allen")
+
+puts "Size of Hash : " + superHeroes.size.to_s
