@@ -1,3 +1,7 @@
 age = 12
 
-puts "5 <=> 10 = " + (5 <=> 10).to_s
+unless age > 4
+    puts "No School"
+else
+    puts "Go to School"
+end
