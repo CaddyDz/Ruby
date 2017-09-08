@@ -8,3 +8,5 @@ middle_name = "Justin"
 full_name = "{first_name} #{middle_name} #{last_name}"
 
 puts "\"a\".equal?(\"a\") : " + ("a".equal?"a").to_s
+
+puts first_name.equal?first_name
