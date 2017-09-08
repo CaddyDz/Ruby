@@ -1,5 +1,5 @@
-numbers = [1,2,3,4,5]
+groceries = ["bananas", "sweet potatoes", "pasta", "tomatoes"]
 
-for number in numbers
-    puts "#{number}, "
+groceries.each do |food|
+    puts "Get some #{food}"
 end
