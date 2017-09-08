@@ -1,34 +1,21 @@
-require_relative "human"
-require_relative "smart"
-
-module Animal
-    def make_sound
-        puts "Grrrr"
+class Bird
+    def tweet(bird_type)
+        bird_type.tweet
     end
 end
 
-class Dog
-    include Animal
-end
-
-rover = Dog.new
-rover.make_sound
-
-class Scientist
-    include Human
-    prepend Smart
-
-    def act_smart
-        return "E = mc^2"
+class Cardinal < Bird
+    def tweet
+        puts "Tweet tweet"
     end
 end
 
-einstein = Scientist.new
+class Parrot < Bird
+    def tweet
+        puts "Squawk"
+    end
+end
 
-einstein.name = "Albert"
-
-puts einstein.name
-
-einstein.run
-
-puts einstein.name + " says " + einstein.act_smart
+generic_bird = Bird.new
+generic_bird.tweet(Cardinal.new)
+generic_bird.tweet(Parrot.new)
