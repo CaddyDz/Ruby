@@ -1,60 +1,34 @@
-class Animal
-    def initialize
-        puts "Creating a New Animal"
-    end
+require_relative "human"
+require_relative "smart"
 
-    def set_name(new_name)
-        @name = new_name
-    end
-
-    def get_name
-        @name
-    end
-
-    def name
-        @name
-    end
-
-    def name=(new_name)
-        if new_name.is_a?(Numeric)
-            puts "Name Can't Be a Number"
-        else
-            @name = new_name
-        end
+module Animal
+    def make_sound
+        puts "Grrrr"
     end
 end
 
-cat = Animal.new
-
-cat.set_name("Peekaboo")
-
-puts cat.get_name
-
-puts cat.name
-
-cat.name = "Sophie"
-puts cat.name
-
 class Dog
-    attr_accessor :name, :height, :weight
-    def bark
-        return "Generic Bark"
-    end
+    include Animal
 end
 
 rover = Dog.new
+rover.make_sound
 
-rover.name = "Rover"
+class Scientist
+    include Human
+    prepend Smart
 
-puts rover.name
-
-class GermanShepard < Dog
-    def bark
-        return "Loud Bark"
+    def act_smart
+        return "E = mc^2"
     end
 end
 
-max = GermanShepard.new
-max.name = "Max"
+einstein = Scientist.new
 
-printf "%s goes %s \n", max.name, max.bark()
+einstein.name = "Albert"
+
+puts einstein.name
+
+einstein.run
+
+puts einstein.name + " says " + einstein.act_smart
