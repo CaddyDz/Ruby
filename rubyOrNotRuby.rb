@@ -1,28 +1,17 @@
-number_hash = {"PI" => 3.14,
-                "Golden" => 1.618,
-                "e" => 2.718}
+class Menu
+    include Enumerable
 
-puts number_hash["PI"]
-
-superHeroes = Hash["Clark Kent", "Superman", "Bruce Wayne", "Batman"]
-
-puts superHeroes["Clark Kent"]
-
-superHeroes["Barry Allen"] = "Flash"
-
-superHeroines = Hash["Lisa Morel", "Aquagirl", "Betty Kane", "Batgirl"]
-
-superHeroes.update(superHeroines)
-
-superHeroes.each do |key, value|
-    puts key.to_s + " : " + value
+    def each
+        yield "pizza"
+        yield "spaghetti"
+        yield "salad"
+        yield "water"
+        yield "bread"
+    end
 end
 
-puts "Has Key Lisa Morel : " + superHeroes.has_key?("Lisa Morel").to_s
-puts "Has Value Batman : " + superHeroes.has_value?("Batman").to_s
-puts "Is Hash Empty : " + superHeroes.empty?.to_s
-puts "Size of Hash : " + superHeroes.size.to_s
+menu_options = Menu.new
 
-superHeroes.delete("Barry Allen")
-
-puts "Size of Hash : " + superHeroes.size.to_s
+menu_options.each do |item|
+    puts "would you like : #{item}"
+end
