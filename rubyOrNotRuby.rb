@@ -1,1 +1,1 @@
-# Comment
+print "Enter a value: "
