@@ -1,6 +1,10 @@
-multiline_string = <<EOM
-This is a very long string
-that contains interpolation
-like #{4 + 5} \n\n
-EOM
-puts multiline_string
+first_name = "Derek"
+last_name = "Banas"
+
+full_name = first_name + last_name
+
+middle_name = "Justin"
+
+full_name = "{first_name} #{middle_name} #{last_name}"
+
+puts full_name.include?("Justin")
