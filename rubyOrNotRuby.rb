@@ -34,3 +34,16 @@ puts cat.name
 
 cat.name = "Sophie"
 puts cat.name
+
+class Dog
+    attr_accessor :name, :height, :weight
+    def bark
+        return "Generic Bark"
+    end
+end
+
+rover = Dog.new
+
+rover.name = "Rover"
+
+puts rover.name
