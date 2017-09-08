@@ -7,14 +7,18 @@ middle_name = "Justin"
 
 full_name = "{first_name} #{middle_name} #{last_name}"
 
-puts "\"a\".equal?(\"a\") : " + ("a".equal?"a").to_s
+full_name.to_i # Convert to an integer
+full_name.to_f # Convert to a float
+full_name.to_sym # Convert to a sym
 
- puts full_name.delete("a")
-
- name_array = full_name.split(//)
-
- puts name_array
-
- name_array = full_name.split(/ /)
-
- puts name_array
+# Escape sequences
+# \\ Backslash
+# \' Single-quote
+# \" Double-quote
+# \a Bell
+# \b Backspace
+# \f Formfeed
+# \n Newline
+# \r Carriage
+# \t Tab
+# \v Vertical tab
