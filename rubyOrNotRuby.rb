@@ -1,7 +1,5 @@
-a = 1
+numbers = [1,2,3,4,5]
 
-until a >= 10
-    a += 1
-    next unless (a%2) == 0
-    puts a
+for number in numbers
+    puts "#{number}, "
 end
