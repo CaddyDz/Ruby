@@ -16,3 +16,16 @@ puts "Array Size : " + array_4.size().to_s
 puts "Array Contains 100 : " + array_4.include?(100).to_s
 puts "How Many 100s : " + array_4.count(100).to_s
 puts "Array Empty : " + array_4.empty?.to_s
+
+puts array_4.join(", ")
+
+p array_4
+
+array_4.each do |value|
+    puts value
+end
+
+
+
+
+
