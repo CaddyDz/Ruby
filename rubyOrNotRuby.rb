@@ -14,3 +14,7 @@ puts full_name.size
 puts "Vowels : " + full_name.count("aeiou").to_s
 
 puts "Consonants : " + full_name.count("^aeiou").to_s
+
+puts full_name.start_with?("Banas")
+
+puts "Index : " + full_name.index("Banas").to_s
