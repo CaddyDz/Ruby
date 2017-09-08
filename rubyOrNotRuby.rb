@@ -1,24 +1,36 @@
-first_name = "Derek"
-last_name = "Banas"
+class Animal
+    def initialize
+        puts "Creating a New Animal"
+    end
 
-full_name = first_name + last_name
+    def set_name(new_name)
+        @name = new_name
+    end
 
-middle_name = "Justin"
+    def get_name
+        @name
+    end
 
-full_name = "{first_name} #{middle_name} #{last_name}"
+    def name
+        @name
+    end
 
-full_name.to_i # Convert to an integer
-full_name.to_f # Convert to a float
-full_name.to_sym # Convert to a sym
+    def name=(new_name)
+        if new_name.is_a?(Numeric)
+            puts "Name Can't Be a Number"
+        else
+            @name = new_name
+        end
+    end
+end
 
-# Escape sequences
-# \\ Backslash
-# \' Single-quote
-# \" Double-quote
-# \a Bell
-# \b Backspace
-# \f Formfeed
-# \n Newline
-# \r Carriage
-# \t Tab
-# \v Vertical tab
+cat = Animal.new
+
+cat.set_name("Peekaboo")
+
+puts cat.get_name
+
+puts cat.name
+
+cat.name = "Sophie"
+puts cat.name
