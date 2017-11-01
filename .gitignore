@@ -1,5 +1,7 @@
+*.out
 *.gem
 *.rbc
+/.vscode
 /.config
 /coverage/
 /InstalledFiles
