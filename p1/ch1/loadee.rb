@@ -1,1 +1,1 @@
-puts "> This is the second file."
+puts '> This is the second file.'
