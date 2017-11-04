@@ -1,5 +1,7 @@
+# Create the object
 ticket = Object.new
 
+# Define the object properties
 def ticket.date
   '01/02/03'
 end
@@ -24,23 +26,11 @@ def ticket.price
   5.50
 end
 
-def ticket.available?
-  false
-end
+print "Information desired: "
+request = gets.chomp
 
-if ticket.available?
-  puts "You're in luck"
+if ticket.respond_to?(request)
+	puts ticket.send(request)
 else
-  puts 'Sorry--that seat has been sold.'
+	puts "No such information available"
 end
-
-print 'This ticket is for: '
-print ticket.event + ', at '
-print ticket.venue + ', on '
-puts ticket.date + '.'
-print 'The performer is '
-puts ticket.performer + '.'
-print 'The seat is '
-print ticket.seat + ', '
-print 'and it costs $'
-puts '%.2f.' % ticket.price
