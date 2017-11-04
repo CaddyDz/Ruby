@@ -1,7 +1,9 @@
 obj = Object.new
 
-def obj.one_arg(*x)
-	puts "I can take zero or more arguments!"
+def two_or_more(a, b, *c)
+	puts "I require two or more arguments!"
+	puts "And sur enough, I got: "
+	p a, b , c
 end
 
-obj.one_arg(1,2,3)
+two_or_more(1,2,3,4,5)
