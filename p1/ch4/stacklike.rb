@@ -7,6 +7,7 @@ module Stacklike
         stack.push(obj)
     end
 
+    # pop returns the last object inserted into the stack following the LIFO pattern
     def take_from_stack
         stack.pop
     end
