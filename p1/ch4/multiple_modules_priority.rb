@@ -13,6 +13,7 @@ end
 class C
   include M
   include N
+  include M
 end
 
 c = C.new
