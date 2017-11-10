@@ -1,8 +1,8 @@
 class C
-	def x(value_for_a, recurse=false)
+	def x(value_for_a, recurse=true)
 		a = value_for_a
 		print "Here's the inspect-string for 'self':"
-		p self
+		puts self.object_id
 		puts "And here's a:"
 		puts a
 		if recurse
