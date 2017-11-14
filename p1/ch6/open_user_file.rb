@@ -1,5 +1,5 @@
 def logfile
-  return File.open("error.log", "w")
+  File.open("error.log", "w")
 end
 
 def open_user_file
@@ -8,11 +8,9 @@ def open_user_file
   begin
     fh = File.open(filename)
   rescue => e
-    logfile.puts("User tried to open #{filename}, #{Time.now}")
-    logfile.puts("Exception: #{e.message}")
+    logfile.puts("User tried to open #{filename}, #{Time.now}\nException: #{e.message}")
     raise
   end
-  yield fh
   fh.close
 end
 
