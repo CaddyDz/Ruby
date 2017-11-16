@@ -1,0 +1,2 @@
+LANG=en_US.iso885915
+puts __ENCODING__
