@@ -19,4 +19,4 @@ class Ticket
 	def price
 	  @price
 	end
-  end
+end
