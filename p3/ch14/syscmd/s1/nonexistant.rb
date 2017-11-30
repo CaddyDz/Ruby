@@ -1,0 +1,2 @@
+p system("datee")
+p $?

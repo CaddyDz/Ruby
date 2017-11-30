@@ -1,0 +1,4 @@
+`datee`
+p $?
+`date`
+p $?
