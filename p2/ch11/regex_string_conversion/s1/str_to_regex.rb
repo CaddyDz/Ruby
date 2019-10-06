@@ -1,2 +1,2 @@
 str = "def"
-p /abc#{str}/
+p (/abc#{str}/)
